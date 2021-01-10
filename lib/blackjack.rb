@@ -44,6 +44,7 @@ def initial_round
 
 
   # code #initial_round here
+<<<<<<< HEAD
 def invalid_command
     puts "Please enter a valid command"
   # code invalid_command here
@@ -62,12 +63,35 @@ def hit?(card_total)
     input = get_user_input
   end
   return card_total
+=======
+
+
+def hit?(card_total)
+  binding.pry
+  prompt_user
+  input = get_user_input
+  if input == 'h'
+    deal_card
+  end
+  if input == 's'
+    end_game
+  else
+    invalid_command
+  end
+>>>>>>> c4cb4ec7c03958c991e67f97c571790f5e7268ff
 
   # code hit? here
 end
 
+<<<<<<< HEAD
 
 
+=======
+def invalid_command
+    puts 'Please enter a valid command'
+  # code invalid_command here
+end
+>>>>>>> c4cb4ec7c03958c991e67f97c571790f5e7268ff
 
 #####################################################
 # get every test to pass before coding runner below #
@@ -82,6 +106,9 @@ def runner
   end_game(card_total)
   display_card_total(card_total)
 end
+<<<<<<< HEAD
 
 
   # code runner here
+=======
+>>>>>>> c4cb4ec7c03958c991e67f97c571790f5e7268ff
